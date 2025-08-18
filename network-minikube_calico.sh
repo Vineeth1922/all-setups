@@ -7,7 +7,7 @@ sudo chmod +x /usr/local/bin/kubectl
 sudo curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 sudo yum install iptables -y
-sudo yum install conntrack-y
+sudo yum install conntrack -y
 sudo chmod +x /var/run/docker.sock
 sudo usermod -ag docker SUSER && newgrp docker
 minikube start --cni-calico
