@@ -1,4 +1,4 @@
-sudo yum install docker-y
+sudo yum install docker -y
 sudo systemctl start docker
 sudo systemctl status docker
 sudo curl -LO "https://dl.kss.io/release/$(curl -L-s https://dl.k8s.10/release/stable.txt)/bin/Linux/amd64/kubectl"
